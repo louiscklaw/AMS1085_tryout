@@ -1,0 +1,137 @@
+
+(session AMS1085_tryout.ses
+  (base_design AMS1085_tryout.dsn)
+  (placement
+    (resolution um 10)
+    (component Capacitor_SMD:CP_Elec_6.3x5.3
+      (place C2 434500 -383000 front 270)
+    )
+    (component Capacitor_SMD:CP_Elec_6.3x5.3::1
+      (place C1 510500 -381500 front 270)
+    )
+    (component Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+      (place R2 360000 -403000 front 0)
+    )
+    (component Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
+      (place R1 361500 -370000 front 180)
+    )
+    (component "Package_TO_SOT_SMD:TO-263-3_TabPin2"
+      (place U1 373000 -246000 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.0.2-bee76a0~70~ubuntu18.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net VOUT
+        (wire
+          (path F.Cu 2500
+            434500 -355000
+            423247 -355000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            423247 -355000
+            408247 -370000
+            376375 -370000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            373000 -303750
+            373000 -366625
+            376375 -370000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            373000 -212250
+            373000 -303750
+          )
+        )
+      )
+      (net "Net-(R1-Pad2)"
+        (wire
+          (path F.Cu 2500
+            346625 -370000
+            345125 -371500
+            345125 -403000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            347600 -303750
+            347600 -369025
+            346625 -370000
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 2500
+            434500 -411000
+            445753 -411000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            510500 -409500
+            447253 -409500
+            445753 -411000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            434500 -411000
+            423247 -411000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            374875 -403000
+            415247 -403000
+            423247 -411000
+          )
+        )
+      )
+      (net VIN
+        (wire
+          (path F.Cu 2500
+            510500 -353500
+            499247 -353500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            398400 -303750
+            398400 -330003
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            398400 -330003
+            475750 -330003
+            499247 -353500
+          )
+        )
+      )
+    )
+  )
+)

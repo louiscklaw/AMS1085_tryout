@@ -1,0 +1,266 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L taobao-components:AMS1085-ADJ U1
+U 1 1 5C0D143C
+P 1800 2100
+F 0 "U1" H 1800 2400 50  0000 C CNN
+F 1 "AMS1085-ADJ" H 1800 2300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 1800 2300 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1085.pdf" H 1900 1850 50  0001 C CNN
+	1    1800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5C0D1579
+P 2550 2300
+F 0 "R1" H 2650 2350 50  0000 L CNN
+F 1 "R_Small" H 2650 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 2300 50  0001 C CNN
+F 3 "~" H 2550 2300 50  0001 C CNN
+	1    2550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5C0D15C7
+P 2550 2650
+F 0 "R2" H 2650 2700 50  0000 L CNN
+F 1 "R_Small" H 2650 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 2650 50  0001 C CNN
+F 3 "~" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C0D1688
+P 2550 2950
+F 0 "#PWR0101" H 2550 2700 50  0001 C CNN
+F 1 "GND" H 2600 2750 50  0000 C CNN
+F 2 "" H 2550 2950 50  0001 C CNN
+F 3 "" H 2550 2950 50  0001 C CNN
+	1    2550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:VIN #PWR0102
+U 1 1 5C0D16F2
+P 900 1750
+F 0 "#PWR0102" H 900 1600 50  0001 C CNN
+F 1 "VIN" H 950 1900 50  0000 C CNN
+F 2 "" H 900 1750 50  0001 C CNN
+F 3 "" H 900 1750 50  0001 C CNN
+	1    900  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:VOUT #PWR0103
+U 1 1 5C0D1777
+P 3100 1750
+F 0 "#PWR0103" H 3100 1600 50  0001 C CNN
+F 1 "VOUT" H 3150 1900 50  0000 C CNN
+F 2 "" H 3100 1750 50  0001 C CNN
+F 3 "" H 3100 1750 50  0001 C CNN
+	1    3100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1750 900  2100
+Wire Wire Line
+	1500 2100 900  2100
+Connection ~ 900  2100
+Wire Wire Line
+	900  2100 900  2350
+$Comp
+L power:GND #PWR0104
+U 1 1 5C0D1974
+P 900 2950
+F 0 "#PWR0104" H 900 2700 50  0001 C CNN
+F 1 "GND" H 950 2750 50  0000 C CNN
+F 2 "" H 900 2950 50  0001 C CNN
+F 3 "" H 900 2950 50  0001 C CNN
+	1    900  2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2550 900  2950
+Wire Wire Line
+	2100 2100 2550 2100
+Wire Wire Line
+	2550 2100 2550 2200
+Wire Wire Line
+	1800 2400 1800 2450
+Wire Wire Line
+	1800 2450 2550 2450
+Wire Wire Line
+	2550 2450 2550 2400
+Wire Wire Line
+	2550 2450 2550 2550
+Connection ~ 2550 2450
+Wire Wire Line
+	2550 2750 2550 2950
+Connection ~ 2550 2100
+$Comp
+L taobao-cp:CP100uf,16V C1
+U 1 1 5C0D21A7
+P 900 2450
+F 0 "C1" H 1000 2500 50  0000 L CNN
+F 1 "CP100uf,16V" H 1000 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 900 2450 50  0001 C CNN
+F 3 "~" H 900 2450 50  0001 C CNN
+	1    900  2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-cp:CP100uf,16V C2
+U 1 1 5C0D21EF
+P 3100 2450
+F 0 "C2" H 3200 2500 50  0000 L CNN
+F 1 "CP100uf,16V" H 3200 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 3100 2450 50  0001 C CNN
+F 3 "~" H 3100 2450 50  0001 C CNN
+	1    3100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1750 3100 2100
+$Comp
+L power:GND #PWR0105
+U 1 1 5C0D23FE
+P 3100 2950
+F 0 "#PWR0105" H 3100 2700 50  0001 C CNN
+F 1 "GND" H 3150 2750 50  0000 C CNN
+F 2 "" H 3100 2950 50  0001 C CNN
+F 3 "" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2950 3100 2550
+Wire Wire Line
+	3100 2100 2550 2100
+Connection ~ 3100 2100
+Wire Wire Line
+	3100 2100 3100 2350
+$Comp
+L taobao-components:VOUT #PWR0106
+U 1 1 5C0D26AD
+P 4300 1750
+F 0 "#PWR0106" H 4300 1600 50  0001 C CNN
+F 1 "VOUT" H 4350 1900 50  0000 C CNN
+F 2 "" H 4300 1750 50  0001 C CNN
+F 3 "" H 4300 1750 50  0001 C CNN
+	1    4300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5C0D276A
+P 4300 2100
+F 0 "R3" H 4400 2150 50  0000 L CNN
+F 1 "R_Small" H 4400 2100 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4300 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:LED_GREEN D1
+U 1 1 5C0D2AB2
+P 4300 2450
+F 0 "D1" V 4350 2350 50  0000 R CNN
+F 1 "LED_GREEN" V 4300 2350 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4300 2450 50  0001 C CNN
+F 3 "" V 4300 2450 50  0001 C CNN
+	1    4300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5C0D2BF0
+P 4300 2950
+F 0 "#PWR0107" H 4300 2700 50  0001 C CNN
+F 1 "GND" H 4350 2750 50  0000 C CNN
+F 2 "" H 4300 2950 50  0001 C CNN
+F 3 "" H 4300 2950 50  0001 C CNN
+	1    4300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2550 4300 2950
+Wire Wire Line
+	4300 1750 4300 2000
+Wire Wire Line
+	4300 2200 4300 2350
+$Comp
+L taobao-components:VOUT #PWR0108
+U 1 1 5C0D3204
+P 5250 2150
+F 0 "#PWR0108" H 5250 2000 50  0001 C CNN
+F 1 "VOUT" H 5250 2300 50  0000 C CNN
+F 2 "" H 5250 2150 50  0001 C CNN
+F 3 "" H 5250 2150 50  0001 C CNN
+	1    5250 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L taobao-components:VIN #PWR0109
+U 1 1 5C0D32A2
+P 5050 1850
+F 0 "#PWR0109" H 5050 1700 50  0001 C CNN
+F 1 "VIN" H 5100 2000 50  0000 C CNN
+F 2 "" H 5050 1850 50  0001 C CNN
+F 3 "" H 5050 1850 50  0001 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5C0D3311
+P 5250 1750
+F 0 "#PWR0110" H 5250 1500 50  0001 C CNN
+F 1 "GND" H 5300 1550 50  0000 C CNN
+F 2 "" H 5250 1750 50  0001 C CNN
+F 3 "" H 5250 1750 50  0001 C CNN
+	1    5250 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5C0D3421
+P 5750 1950
+F 0 "J1" H 5850 2000 50  0000 L CNN
+F 1 "Conn_01x03" H 5850 1900 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5750 1950 50  0001 C CNN
+F 3 "~" H 5750 1950 50  0001 C CNN
+	1    5750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1850 5250 1850
+Wire Wire Line
+	5250 1850 5250 1750
+Wire Wire Line
+	5250 2150 5250 2050
+Wire Wire Line
+	5250 2050 5550 2050
+Wire Wire Line
+	5050 1850 5050 1950
+Wire Wire Line
+	5050 1950 5550 1950
+$EndSCHEMATC
